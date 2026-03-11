@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Você está vendo a imagem completa?Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F601</p>
+    <picture>
+        <source media="(max-width: 710px)" srcset="imagens/singapura-p.jpg" type="image/jpg">
+        <source media="(max-width: 1310px)" srcset="imagens/singapura-m.jpg" type="image/jpg">
+        <img src="imagens/singapura-full.jpg" alt="Imagem singapura Grande">
+    </picture>
+</body>
+</html>

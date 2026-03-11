@@ -1,0 +1,110 @@
+/*
+1F5F8 - check
+*/
+
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf);
+}
+
+body {
+    background-color: lightgreen;
+    font-family: 'android';
+    margin: 0%;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(7, 138, 88), rgb(2, 92, 32));
+    margin: 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 3px black;
+}
+
+header > p {
+    text-align: center;
+    color: white;
+    
+}
+
+#header > a {
+    color: white;
+    font-style: none;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#header > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0px 88px 30px ;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0pX 10px 10px;
+}
+
+.assunto {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#historia {
+    color: green;
+}
+
+.subtitulos {
+    
+    color: green;
+    background-image: linear-gradient(to right, rgb(104, 235, 104), white);
+    padding: 5px;
+}
+
+p {
+    font-weight: bold;
+}
+
+#video {
+    background-color: green;
+}
+
+ul {
+    text-decoration: underline;
+    
+}
+
+#extra {
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#extra > aside {
+    background-color: rgb(12, 168, 25);
+    margin: -10px -10px;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(0, 87, 0);
+    margin: 0px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
+
+footer > p {
+    margin: 0px;
+}
