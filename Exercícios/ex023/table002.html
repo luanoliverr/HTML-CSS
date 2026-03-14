@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        thead, tfoot {
+            background-color: rgb(14, 13, 13);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(14, 13, 13);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(189, 188, 188);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        p {
+            position: relative;
+        }
+
+        strong#novo {
+            position: sticky;
+            top: -1px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+     <!--
+        ANATOMIA PARA TABELAS GRANDER
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <h1>Uso de tabelas grandes</h1>            
+    <table>
+        <caption>Tabela de População (Simulação)</caption>
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sudeste</td>
+                <td class="num">89 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">12 milhões</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 milhões</td>
+            </tr>
+            <tr>
+                <td>Manaus</td>
+                <td class="num">10 milhões</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td class="num">18 milhões</td>
+            </tr>
+            <tr>
+                <td>Angola</td>
+                <td class="num">19 milhões</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">28 milhões</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">8 milhões</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">25 milhões</td>
+            </tr>
+             <tr>
+                <td>Sudeste</td>
+                <td class="num">89 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">12 milhões</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 milhões</td>
+            </tr>
+            <tr>
+                <td>Manaus</td>
+                <td class="num">10 milhões</td>
+            </tr>
+            <tr>
+                <td>Argentina</td>
+                <td class="num">18 milhões</td>
+            </tr>
+            <tr>
+                <td>Angola</td>
+                <td class="num">19 milhões</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">28 milhões</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">8 milhões</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">25 milhões</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>70 milhões</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p> <strong id="novo">Lorem ipsum dolor sit amet consectetur</strong> adipisicing elit. Non, at cumque libero vero dolorem, fugit nam adipisci dolorum corrupti consequuntur, recusandae laboriosam. Corporis deserunt, inventore nisi error magnam voluptatum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis repellat voluptatibus perferendis qui dignissimos error laboriosam enim doloremque totam. Mollitia, vero ratione debitis in ab eos sit corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem incidunt inventore illum tenetur mollitia expedita sit assumenda ex repellat libero, accusamus maiores? Unde quos, exercitationem ea blanditiis corrupti eaque!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, at cumque libero vero dolorem, fugit nam adipisci dolorum corrupti consequuntur, recusandae laboriosam. Corporis deserunt, inventore nisi error magnam voluptatum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis repellat voluptatibus perferendis qui dignissimos error laboriosam enim doloremque totam. Mollitia, vero ratione debitis in ab eos sit corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem incidunt inventore illum tenetur mollitia expedita sit assumenda ex repellat libero, accusamus maiores? Unde quos, exercitationem ea blanditiis corrupti eaque!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, at cumque libero vero dolorem, fugit nam adipisci dolorum corrupti consequuntur, recusandae laboriosam. Corporis deserunt, inventore nisi error magnam voluptatum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis repellat voluptatibus perferendis qui dignissimos error laboriosam enim doloremque totam. Mollitia, vero ratione debitis in ab eos sit corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem incidunt inventore illum tenetur mollitia expedita sit assumenda ex repellat libero, accusamus maiores? Unde quos, exercitationem ea blanditiis corrupti eaque!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, at cumque libero vero dolorem, fugit nam adipisci dolorum corrupti consequuntur, recusandae laboriosam. Corporis deserunt, inventore nisi error magnam voluptatum eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis repellat voluptatibus perferendis qui dignissimos error laboriosam enim doloremque totam. Mollitia, vero ratione debitis in ab eos sit corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem incidunt inventore illum tenetur mollitia expedita sit assumenda ex repellat libero, accusamus maiores? Unde quos, exercitationem ea blanditiis corrupti eaque!</p>
+</body>
+</html>
