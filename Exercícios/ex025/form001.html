@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        div {
+            background-color: black;
+            padding: 15px;
+            border-radius: 25px;
+            color: white;
+        }
 
+        div input:hover {
+            border: 3px solid rgb(122, 6, 122);
+            transition: border, active 2s;
+           
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="get">
         <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
     </form>
+    <div>
+        <form action="cadastro.java" method="post">
+            <p><label for="iemail">e-mail:</label> <input type="iemail" name="email" id="email"></p>
+            <p><label for="isenha">senha:</label> <input type="password" name="senha" id="isenha"></p>
+            <p><input type="submit" value="Entrar"></p>
+        </form>
+    </div>
 </body>
 </html>
