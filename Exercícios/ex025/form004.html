@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        fieldset {
+            background-color: aliceblue;
+            width: 400px;
+            
+        }
+
+        fieldset:hover {
+            background-image: linear-gradient(to right, yellow, orange, red);
+            border: 3px solid black;
+            transition-duration: 3s;
+        }
+
+        legend {
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+        }
+
+        input:hover {
+            border: 3px double black;
+            
+        }
+
+        label {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Envio</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="tel" name="Nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{0-5}$">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
