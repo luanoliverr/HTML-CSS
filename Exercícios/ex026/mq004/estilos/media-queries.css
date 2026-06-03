@@ -1,3 +1,84 @@
 @charset "UTF-8";
 
 /* Outros tipos de dispositivos */
+
+/* Impressão 
+----------------*/
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-shadow: none;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+/* Tablet 
+-------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+    }
+
+    main {
+        max-width: 500px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+/* Laptop 
+-------------*/
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg);
+        background-size: cover;
+    }
+
+    main {
+        max-width: 650px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+/* Desktop
+--------------*/
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+    body {
+        background: url(../imagens/back-tv.jpg);
+        background-size: cover;
+    }
+
+    main {
+        max-width: 750px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
