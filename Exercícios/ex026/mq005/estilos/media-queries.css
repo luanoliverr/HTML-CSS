@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    menu > ul > li > a:hover {
+        transition-duration: 1s;
+        background-color: rgb(29, 29, 29);
+    }
+
+    main {
+        width: 700px;
+    }
+
+}
